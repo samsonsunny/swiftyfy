@@ -9,19 +9,15 @@
 import SwiftUI
 
 struct LessonListView: View {
+	
+	var lessonData: [Lesson]
+	
 	var body: some View {
-		List {
-			NavigationLink(destination: LessonDetailView()) {
-				Text("Introduction")
-			}
-			NavigationLink(destination: LessonDetailView()) {
-				Text("Variables")
-			}
-			NavigationLink(destination: LessonDetailView()) {
-				Text("Constants")
-			}
-			NavigationLink(destination: LessonDetailView()) {
-				Text("Booleans")
+		
+		List(lessonData, id: \.id) { lesson in
+			
+			NavigationLink(destination: LessonDetailView(lesson: lesson)) {
+				Text(lesson.title)
 			}
 		}
 	}
@@ -29,6 +25,7 @@ struct LessonListView: View {
 
 struct LessonListView_Previews: PreviewProvider {
 	static var previews: some View {
-		LessonListView()
+		LessonListView(lessonData: [Lesson(id: "1", title: "Hello", subTitle: "how are u?"),
+									Lesson(id: "2", title: "Hi", subTitle: "how are u?")])
 	}
 }

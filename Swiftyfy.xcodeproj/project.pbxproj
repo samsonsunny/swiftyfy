@@ -19,6 +19,8 @@
 		22B4EAF823364E3400C204A7 /* SwiftyfyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4EAF723364E3400C204A7 /* SwiftyfyTests.swift */; };
 		22B4EB0323364E3400C204A7 /* SwiftyfyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4EB0223364E3400C204A7 /* SwiftyfyUITests.swift */; };
 		22C24C04233664920023BED0 /* TopicsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C24C03233664920023BED0 /* TopicsRow.swift */; };
+		22DFA0C3233E483F00A71EC1 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DFA0C2233E483F00A71EC1 /* Lesson.swift */; };
+		22DFA0C5233E48D900A71EC1 /* LessonData.json in Resources */ = {isa = PBXBuildFile; fileRef = 22DFA0C4233E48D900A71EC1 /* LessonData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		22B4EB0423364E3400C204A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22B4EB1023364F5900C204A7 /* Swiftyfy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swiftyfy.entitlements; sourceTree = "<group>"; };
 		22C24C03233664920023BED0 /* TopicsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsRow.swift; sourceTree = "<group>"; };
+		22DFA0C2233E483F00A71EC1 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		22DFA0C4233E48D900A71EC1 /* LessonData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LessonData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				22B4EAE423364E3200C204A7 /* ContentView.swift */,
 				223E2F62233CF6840004DCA6 /* LessonListView.swift */,
 				223E2F64233CFA260004DCA6 /* LessonDetailView.swift */,
+				22DFA0C2233E483F00A71EC1 /* Lesson.swift */,
+				22DFA0C4233E48D900A71EC1 /* LessonData.json */,
 				22B4EAE623364E3400C204A7 /* Assets.xcassets */,
 				22B4EAEB23364E3400C204A7 /* LaunchScreen.storyboard */,
 				22B4EAEE23364E3400C204A7 /* Info.plist */,
@@ -255,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B4EAED23364E3400C204A7 /* LaunchScreen.storyboard in Resources */,
+				22DFA0C5233E48D900A71EC1 /* LessonData.json in Resources */,
 				22B4EAEA23364E3400C204A7 /* Preview Assets.xcassets in Resources */,
 				22B4EAE723364E3400C204A7 /* Assets.xcassets in Resources */,
 			);
@@ -284,6 +291,7 @@
 				223E2F63233CF6840004DCA6 /* LessonListView.swift in Sources */,
 				22B4EADE23364E3200C204A7 /* AppDelegate.swift in Sources */,
 				223E2F65233CFA260004DCA6 /* LessonDetailView.swift in Sources */,
+				22DFA0C3233E483F00A71EC1 /* Lesson.swift in Sources */,
 				22B4EAE023364E3200C204A7 /* SceneDelegate.swift in Sources */,
 				22C24C04233664920023BED0 /* TopicsRow.swift in Sources */,
 				22B4EAE523364E3200C204A7 /* ContentView.swift in Sources */,

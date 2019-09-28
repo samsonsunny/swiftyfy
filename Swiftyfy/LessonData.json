@@ -1,0 +1,17 @@
+[{
+	"id": "1",
+	"title": "Introduction",
+	"subTitle": "Swift Basics"
+}, {
+	"id": "2",
+	"title": "Variables",
+	"subTitle": "Swift Basics"
+}, {
+	"id": "3",
+	"title": "Constants",
+	"subTitle": "Swift Basics"
+}, {
+	"id": "4",
+	"title": "Booleans",
+	"subTitle": "Swift Basics"
+}]

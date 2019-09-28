@@ -9,17 +9,15 @@
 import SwiftUI
 
 struct LessonDetailView: View {
+	var lesson: Lesson
     var body: some View {
         List {
 			
 			VStack(alignment: .leading, spacing: 0) {
-				Text("You can try out the navigation directly in the preview by switching to live mode. Click the Live Preview button and tap a landmark to visit the detail page.")
+				Text(lesson.title)
 			}
 			VStack(alignment: .leading, spacing: 0) {
-				Text("You can try out the navigation directly in the preview by switching to live mode. Click the Live Preview button and tap a landmark to visit the detail page.")
-			}
-			VStack(alignment: .leading, spacing: 0) {
-				Text("You can try out the navigation directly in the preview by switching to live mode. Click the Live Preview button and tap a landmark to visit the detail page.")
+				Text(lesson.subTitle)
 			}
 		}
 		.lineSpacing(10)
@@ -29,6 +27,6 @@ struct LessonDetailView: View {
 
 struct LessonDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LessonDetailView()
+		LessonDetailView(lesson: lessonData[0])
     }
 }
