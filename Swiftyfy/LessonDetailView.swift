@@ -12,21 +12,17 @@ struct LessonDetailView: View {
 	var lesson: Lesson
     var body: some View {
         List {
-			
-			VStack(alignment: .leading, spacing: 0) {
-				Text(lesson.title)
-			}
 			VStack(alignment: .leading, spacing: 0) {
 				Text(lesson.subTitle)
 			}
 		}
 		.lineSpacing(10)
-		.navigationBarTitle("Introduction")
+		.navigationBarTitle(lesson.title)
     }
 }
 
 struct LessonDetailView_Previews: PreviewProvider {
     static var previews: some View {
-		LessonDetailView(lesson: lessonData[0])
+		LessonDetailView(lesson: Lesson(id: "1", title: "Hello", subTitle: "how are u?"))
     }
 }

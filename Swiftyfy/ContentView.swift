@@ -8,30 +8,20 @@
 
 import SwiftUI
 
-var lessonData: [Lesson] {
-	if let path = Bundle.main.url(forResource: "LessonData", withExtension: "json"),
-		let data = try? Data(contentsOf: path) {
-		do {
-			let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [Any]
-			
-			
-			return []
-		} catch {
-			
-			print(error)
-			
-			return []
-		}
-		
-		
-	}
-	return []
-}
-
 struct ContentView: View {
+	
+	var lessons: [Lesson] {
+		if let path = Bundle.main.url(forResource: "LessonData", withExtension: "json"),
+			let data = try? Data(contentsOf: path) {
+			let lessons = try? JSONDecoder().decode([Lesson].self, from: data)
+			return lessons ?? []
+		}
+		return []
+	}
+	
     var body: some View {
 		NavigationView {
-			LessonListView(lessonData: lessonData)
+			LessonListView(lessonData: lessons)
 			.navigationBarTitle("Learn Swift", displayMode: .large)
 		}
     }

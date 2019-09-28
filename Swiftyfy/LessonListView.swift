@@ -15,7 +15,6 @@ struct LessonListView: View {
 	var body: some View {
 		
 		List(lessonData, id: \.id) { lesson in
-			
 			NavigationLink(destination: LessonDetailView(lesson: lesson)) {
 				Text(lesson.title)
 			}
